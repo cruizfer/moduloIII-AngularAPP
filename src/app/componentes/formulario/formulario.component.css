@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cutive&family=Cutive+Mono&family=PT+Mono&family=Plaster&display=swap');
+
+h2{
+    font-family: 'Plaster', cursive;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+div{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mb-1 input{
+    border: 1px solid rgb(207, 206, 206);
+    border-radius: 3px;
+    padding: 2px;
+    color: grey;
+}
+label{
+    color: grey;
+}
+select{
+    margin-top: 10px;
+    padding: 2px;
+    border: 1px solid rgb(207, 206, 206);
+    border-radius: 3px;
+}

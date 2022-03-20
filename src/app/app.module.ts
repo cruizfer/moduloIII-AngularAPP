@@ -3,14 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ListaPostsComponent } from './componentes/lista-posts/lista-posts.component';
+import { DetallePostsComponent } from './componentes/detalle-posts/detalle-posts.component';
+import { FormularioComponent } from './componentes/formulario/formulario.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { DondeEstamosComponent } from './componentes/donde-estamos/donde-estamos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListaPostsComponent,
+    DetallePostsComponent,
+    FormularioComponent,
+    DondeEstamosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

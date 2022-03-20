@@ -1,0 +1,25 @@
+<div class="search">
+    <input type="text" placeholder="Busca por palabra..." (input)="onInput($event)">
+</div>
+
+<section class="posts">
+    <article class="post" *ngFor="let post of arrListaPosts" [routerLink]="['/post', post.id]">
+        <h3>{{post.title}}</h3>
+        <h4>Por: <span>{{post.author}}</span></h4>
+        <h5>{{post.createdAt}}</h5>
+        <hr>
+        <p>{{post.body}}</p>
+        <h6>Post incluido en la sección de <span>{{post.category}}</span></h6>
+
+    </article>
+</section>
+<div class="footer">
+    <select class=options (change)="onChange($event)">
+        <option value="All">Categoría</option>
+        <option value="Restauración">Restauración</option>
+        <option value="Música">Música</option>
+        <option value="Cine">Cine</option>
+    </select>
+
+    <button routerLink="/new">Crear nueva entrada</button>
+</div>
