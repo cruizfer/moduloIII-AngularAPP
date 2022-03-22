@@ -8,6 +8,7 @@ import { DetallePostsComponent } from './componentes/detalle-posts/detalle-posts
 import { FormularioComponent } from './componentes/formulario/formulario.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DondeEstamosComponent } from './componentes/donde-estamos/donde-estamos.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,16 @@ import { DondeEstamosComponent } from './componentes/donde-estamos/donde-estamos
     ListaPostsComponent,
     DetallePostsComponent,
     FormularioComponent,
-    DondeEstamosComponent
+    DondeEstamosComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBziBN0V7bqd9xgzRtudHeiOvgAwQC9wiA'
+    })
 
   ],
   providers: [],

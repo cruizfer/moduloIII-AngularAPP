@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DondeEstamosComponent implements OnInit {
 
-  constructor() { }
+  latitud: number;
+  longitud: number
+  constructor() {
+    this.latitud = 40.416735626208386
+    this.longitud = -3.671758360011675
+
+  }
 
   ngOnInit(): void {
   }

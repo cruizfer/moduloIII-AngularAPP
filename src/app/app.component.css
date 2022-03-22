@@ -5,3 +5,12 @@ h1{
     font-size: 5em;
     font-family: 'Plaster', cursive;
 }
+footer{
+    font-size: 0.65em;
+    text-align: center;
+    padding: 20px 0px;
+
+}
+span{
+    font-weight: bold;
+}
