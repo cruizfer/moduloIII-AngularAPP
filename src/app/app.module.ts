@@ -24,7 +24,7 @@ import { AgmCoreModule } from '@agm/core';
     AppRoutingModule,
     ReactiveFormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBziBN0V7bqd9xgzRtudHeiOvgAwQC9wiA'
+      apiKey: ''
     })
 
   ],
